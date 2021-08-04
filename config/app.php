@@ -14,7 +14,6 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-    'secret_token'=>'3Fd7P33zMyTekthZXzLPyB95vhFMbU6',
     
     /*
     |--------------------------------------------------------------------------
