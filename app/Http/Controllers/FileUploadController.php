@@ -33,10 +33,10 @@ class FileUploadController extends Controller
         ]);
 
         
-        $user_id = $request->header('user_id');
-        $school_id = $request->header('school_id');
+        $user_id = $request->header('userid');
+        $school_id = $request->header('schoolid');
         $token = $request->header('token');
-        $year_id = $request->header('year_id');
+        $year_id = $request->header('yearid');
         if(!$user_id || !$token || !$year_id || $token != env("SECRET_TOKEN")){
             return $this->errorMessage('Invalid Request');
         }
